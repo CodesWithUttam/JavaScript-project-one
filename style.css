@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    position: relative;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 0px 2px rgba(0,0,0,0.2);
+}
+
+.logo{
+    width: 10rem;
+    & img{
+        width: 100%;
+    }
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.p-1{
+    padding: 1rem;
+}
+
+.gradient-area{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(255, 255, 255));
+}
+
+.gradient-box{
+    position: relative;
+    width: 60rem;
+    background-color: rgba(255,255,255,0.5);
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+.special-box{
+    display: flex;
+    padding: 0 1rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.color-box,.direction-box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.direction-box{
+    padding: 0 1rem;
+}
+
+.color-item-box{
+    position: relative;
+}
+
+.color-item{
+    padding: 1rem 2rem;
+    background-color: rgba(255,255,255,0.5);
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+    font-size: 1.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.color-remove{
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.color-add{
+    width: 38px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+    font-size: 1.5rem;
+    border-radius: 50%;
+}
+
+.code-box{
+    position: relative;
+    width: 95%;
+    margin: 0 1rem 1rem 1rem;
+    padding: 1rem;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    cursor: pointer;
+    user-select: auto;
+}
+
+p{
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.message{
+    position: absolute;
+    top: -50px;
+    right: 0;
+    color: black;
+    padding: 0.5rem 1rem;
+    background-color: white;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.show-range{
+    font-size: 1.5rem;
+    padding: 0 2rem;
+}
