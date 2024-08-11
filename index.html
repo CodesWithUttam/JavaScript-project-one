@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CWU - CSS Gradient Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo-removebg-preview.png" alt="logo">
+        </div>
+        <h1>CSS Gradient Generator</h1>
+    </header>
+
+    <div class="gradient-area" id="gradientArea">
+        <div class="gradient-box">
+            <h3 class="p-1">Hex color code: (Select atleast two color)</h3>
+            <p class="message" id="clearData">Clear Data</p>
+            <div class="special-box">
+                <div id="colorBox" class="color-box"></div>
+                <div class="add-box">
+                    <div class="color-add" id="addColor"><i class="fa-solid fa-plus"></i></div>
+                </div>
+                <div class="add-box">
+                    <div class="color-add" id="confirmColor"><i class="fa-solid fa-check"></i></div>
+                </div>
+            </div>
+
+            <h3 class="p-1">Direction:</h3>
+
+            <div class="direction-box">
+                <div class="direction-range">
+                    <input type="range" min="0" max="360" value="0" name="range" id="range">
+                    <label class="show-range" id="showRange" for="range">0deg</label>
+                </div>
+            </div>
+
+            <h3 class="p-1">Code: (Double click for copy)</h3>
+            <div class="code-box">
+                <p id="showData">background: linear-gradient(0deg, rgb(0, 0, 0), rgb(255, 255, 255));</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
