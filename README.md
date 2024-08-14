@@ -1,1 +1,1 @@
-# JavaScript-project-one
+# Gradient Generator
